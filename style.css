@@ -414,8 +414,10 @@ a.btn:hover {
     display: flex;
     grid-template-rows: 1fr auto;
     align-items:centre;
-    border: 2px solid var(--hover-color);
+    border: 3px solid var(--hover-color);
     box-shadow: var(--neon-box-shadow);
+    
+
 
 
 }
@@ -506,4 +508,16 @@ a.btn:hover {
     /* background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); */
 }
    
+#p4
+{
+    margin-bottom: 80px;
+color:var(--text-color) ;
+    font-weight: 500;
+    font-size: 35px;
+    
+}
 
+#projectspecial
+{
+    color:var(--hover-color);
+}
