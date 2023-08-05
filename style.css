@@ -35,13 +35,13 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: var(--bg-color);  
+    background-color: var(--bg-color);
     color: var(--text-color);
 
     /* background: linear-gradient(to bottom, #1a062f, var(--bg-color)); */
 
 
-     background: linear-gradient(to bottom ,rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));      
+    background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));
 
 
 
@@ -106,9 +106,8 @@ span {
 
 }
 
-.navlist a.active
-{
-    color:var(--hover-color);
+.navlist a.active {
+    color: var(--hover-color);
 }
 
 #menu-icon {
@@ -249,7 +248,8 @@ section {
     border: 2px solid var(--hover-color);
 
 }
-a.btn::before{
+
+a.btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -263,36 +263,37 @@ a.btn::before{
 
 }
 
-a.btn:hover::before{
+a.btn:hover::before {
     width: 100%;
 
 }
-a.btn:hover{
-    color:var(--hover-color);
-}
-.socialicons
-{
-margin-top: 2rem;
-display: flex; 
-justify-content:space-between;
-width: 115px;
-height: 25px;
-align-items: center;
-align-content: center;
+
+a.btn:hover {
+    color: var(--hover-color);
 }
 
-.socialicons a{
+.socialicons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    height: 25px;
+    align-items: center;
+    align-content: center;
+}
+
+.socialicons a {
     display: inline-flex;
     width: 50px;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+
     /* background: #8741d2; */
     /* color: var(--bg-color); */
-background: var(--bg-color);
-color:var(--hover-color); 
-  
+    background: var(--bg-color);
+    color: var(--hover-color);
+
     bottom: 2px solid var(--hover-color);
     transition: 0.6s;
     box-shadow: 0 0 0 0.2rem #69478cf7;
@@ -301,17 +302,18 @@ color:var(--hover-color);
     z-index: 1;
     overflow: hidden;
 }
-.socialicons a i{
+
+.socialicons a i {
     font-size: 1.5rem;
 }
-.socialicons a:hover
-{
-    
+
+.socialicons a:hover {
+
 
     color: var(--bg-color);
 }
-.socialicons a::before
-{
+
+.socialicons a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -321,44 +323,43 @@ color:var(--hover-color);
     /* background: var(--hover-color); */
     background: #b380ff;
     transition: 0.6s;
-    z-index: -1 ;
+    z-index: -1;
 }
-.socialicons a:hover::before
-{
-width: 100%;
+
+.socialicons a:hover::before {
+    width: 100%;
 }
 
 
 /* about part */
-.about
-{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-gap: 2em;
     font-size: large;
     height: 900px;
-    background: linear-gradient( to bottom , rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); 
-    background: linear-gradient(to bottom ,rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));   
-   
+    background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));
+    background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));
+
 }
 
-.about.img-about
-{
+.about.img-about {
     text-align: center;
     position: relative;
 }
-.about.img-about img
-{
+
+.about.img-about img {
     max-width: 400px;
     height: auto;
 }
-.about-content
-{
+
+.about-content {
     height: 300px;
 }
-.introduce{
-    color:var(--text-color);
+
+.introduce {
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 2px;
@@ -366,20 +367,22 @@ width: 100%;
     margin-bottom: 50px;
 }
 
-.about-content h2{
-    color:  #bb62e5;
+.about-content h2 {
+    color: #bb62e5;
     font-size: 35px;
 
 }
-#p1, #p2
-{
+
+#p1,
+#p2 {
     margin-bottom: 20px;
 }
-.special-text{
-    color:  #aa54d2;
+
+.special-text {
+    color: #aa54d2;
     font-weight: 700px;
-    font-size:large;
-    font-style:italic;
+    font-size: large;
+    font-style: italic;
 
 
 
@@ -387,15 +390,57 @@ width: 100%;
 
 /* portfolio styling */
 
-.portfolio h2{
-    color:  #bb62e5;
+.portfolio h2 {
+    color: #bb62e5;
     font-size: 35px;
 
 }
 
-.portfolio
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+
+}
+
+.port-box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+
+
+}
+
+.port-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.port-image img 
 {
-    
+    width: 100%;
+    opacity: 0.5s;
+    height: 100%;
+    transition: 0.5s;
 }
 
 
+.port-content
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+}
