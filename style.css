@@ -35,15 +35,13 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    /* background-color: var(--bg-color);   */
+    background-color: var(--bg-color);  
     color: var(--text-color);
 
-    background: linear-gradient(to bottom, #1a062f, var(--bg-color));
+    /* background: linear-gradient(to bottom, #1a062f, var(--bg-color)); */
 
 
-     background: linear-gradient(
-    to bottom ,
-    rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));     
+     background: linear-gradient(to bottom ,rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));      
 
 
 
@@ -52,6 +50,11 @@ body {
 
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,6 +104,11 @@ span {
     color: var(--hover-color);
     text-shadow: var(--font-neon-text-shadow);
 
+}
+
+.navlist a.active
+{
+    color:var(--hover-color);
 }
 
 #menu-icon {
@@ -329,7 +337,9 @@ width: 100%;
     align-items: center;
     grid-gap: 2em;
     font-size: large;
-    /* background: var(--bg-color); */
+    height: 900px;
+    background: linear-gradient( to bottom , rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); 
+    background: linear-gradient(to bottom ,rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));   
    
 }
 
