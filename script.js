@@ -66,3 +66,14 @@ window.addEventListener("scroll",function(){
 
 
 
+//reset the form
+
+const formToReset = document.getElementById('form1');
+formToReset.addEventListener('submit', (e) => {
+    setTimeout()
+   e.preventDefault();
+   formToReset.reset();
+});
+
+
+
