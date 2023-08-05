@@ -11,9 +11,15 @@
 
 :root {
     --text-color: #f5f5f5;
-    /* --hover-color: #7308a4; */
     --hover-color: #9534c3;
-    --bg-color: #1a062f;
+    /* --bg-color: #1a062f; */
+
+
+    --bg-color: #2a094e;
+
+
+        /* --bg-color: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); */
+
     --secon-bg-color: #352a37;
     --big-font: 2.5rem;
     --norma-font: 2rem;
@@ -43,7 +49,6 @@ body {
     /* background: linear-gradient(to bottom, #1a062f, var(--bg-color)); */
 
 
-    /* background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); */
 
 
 
@@ -80,6 +85,14 @@ header {
 
 }
 
+
+header.sticky
+{
+    background: var(--bg-color);
+    border-bottom: 1px solid #951a95;
+    padding: 12px 10%;
+
+}
 
 .logo {
     font-size: 26px;
@@ -520,7 +533,9 @@ section {
 /* contact css */
 .contact
 {
-     width:100%;
+      width:100%;
+     margin-top: 100px;
+     height: 100%;
 }
 .contact form{
     text-align: center;
