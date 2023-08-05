@@ -36,12 +36,14 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
+    
     color: var(--text-color);
+    /* background: var(--bg-color); */
 
     /* background: linear-gradient(to bottom, #1a062f, var(--bg-color)); */
 
 
-    background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));
+    /* background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); */
 
 
 
@@ -73,8 +75,8 @@ header {
     z-index: -12;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
+    padding-bottom: 30px; 
+    padding-top: 30px ;
 
 }
 
@@ -338,9 +340,10 @@ a.btn:hover {
     align-items: center;
     grid-gap: 2em;
     font-size: large;
-    height: 900px;
-    background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));
-    background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%));
+    height:900px;
+    margin-top: 233px; 
+    /* background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); */
+
 
 }
 
@@ -410,7 +413,7 @@ a.btn:hover {
     background: #292e33;
     display: flex;
     grid-template-rows: 1fr auto;
-    align-items: center;
+    align-items:centre;
     border: 2px solid var(--hover-color);
     box-shadow: var(--neon-box-shadow);
 
@@ -449,10 +452,21 @@ a.btn:hover {
     flex-direction: column;
     text-align: center;
     transition: 0.5s;
-    padding: 0 2 rem;
-    /* color:black;
-    font-weight: 550; */
+    padding: 0 2rem;
+   
 
+}
+
+.port-box:hover .port-content
+{
+    opacity: 1;
+
+}
+
+.port-box:hover .port-image img
+{
+
+    transform: scale(1.1);
 }
 
 .port-content h3{
@@ -485,3 +499,11 @@ a.btn:hover {
     color:var(--secon-bg-color);
 
 }
+.portfolio
+{
+    margin-top: 200px;
+    height: 500px;
+    /* background: linear-gradient(to bottom, rgb(31 12 70 / 94%), rgb(17 15 22 / 91%)); */
+}
+   
+
