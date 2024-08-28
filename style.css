@@ -427,10 +427,6 @@ section {
     align-items: centre;
     border: 3px solid var(--hover-color);
     box-shadow: var(--neon-box-shadow);
-
-
-
-
 }
 
 .port-image {
